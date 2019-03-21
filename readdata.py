@@ -42,7 +42,7 @@ n_usecases = len(usecase_counts)
 
 #create a histogram
 plt.figure(figsize=(10, 10))
-plt.barh(range(n_usecases), usecase_counts.values())
+plt.barh(range(n_usecases), list(usecase_counts.values()))
 plt.xticks(fontsize=12)
 plt.yticks(range(n_usecases), list(usecase_counts.keys()),
            rotation='horizontal', fontsize=12)
